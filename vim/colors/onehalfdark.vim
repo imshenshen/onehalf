@@ -124,22 +124,22 @@ call s:h("Constant", s:cyan, "", "")
 call s:h("String", s:green, "", "")
 call s:h("Character", s:green, "", "")
 call s:h("Number", s:yellow, "", "")
-call s:h("Boolean", s:yellow, "", "")
+call s:h("Boolean", s:yellow, "", "italic")
 call s:h("Float", s:yellow, "", "")
 
 call s:h("Identifier", s:red, "", "")
 call s:h("Function", s:blue, "", "")
-call s:h("Statement", s:purple, "", "")
+call s:h("Statement", s:purple, "", "italic")
 
-call s:h("Conditional", s:purple, "", "")
-call s:h("Repeat", s:purple, "", "")
+call s:h("Conditional", s:purple, "", "italic")
+call s:h("Repeat", s:purple, "", "italic")
 call s:h("Label", s:purple, "", "")
 call s:h("Operator", s:fg, "", "")
-call s:h("Keyword", s:red, "", "")
-call s:h("Exception", s:purple, "", "")
+call s:h("Keyword", s:red, "", "italic")
+call s:h("Exception", s:purple, "", "italic")
 
 call s:h("PreProc", s:yellow, "", "")
-call s:h("Include", s:blue, "", "")
+call s:h("Include", s:blue, "", "italic")
 call s:h("Define", s:purple, "", "")
 call s:h("Macro", s:purple, "", "")
 call s:h("PreCondit", s:yellow, "", "")
@@ -194,6 +194,16 @@ hi link gitcommitSelected gitcommitComment
 hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
+" }
+"
+" Javascript {
+call s:h("jsThis",s:red,"","italic,bold")
+call s:h("jsReturn",s:red,"","italic,bold")
+" }
+" vue {
+call s:h("vueSurroundingTag", s:purple,"","")
+call s:h("htmlSpecialTagName",s:red,"","italic")
+call s:h("htmlTagName", s:purple,"","")
 " }
 
 " Fix colors in neovim terminal buffers {
